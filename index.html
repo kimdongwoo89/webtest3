@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>세종특별자치시교육청</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* 커스텀 스타일 추가 */
+    .hero-section {
+      background-image: url('https://example.com/education-background.jpg'); /* 적절한 배경 이미지 사용 */
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      color: white;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .program-section, .contact-section {
+      padding: 50px 0;
+    }
+
+    .footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 네비게이션 바 -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">세종특별자치시교육청</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#about">소개</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#programs">교육 프로그램</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#notices">공지사항</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">연락처</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <h1>세종특별자치시교육청</h1>
+    <p>미래를 여는 창의적 교육</p>
+  </section>
+
+  <!-- 소개 섹션 -->
+  <section id="about" class="container program-section">
+    <h2 class="text-center">우리 기관 소개</h2>
+    <p class="text-center">세종특별자치시교육청은 학생들이 창의적으로 성장할 수 있도록 다양한 교육 프로그램과 양질의 교육 환경을 제공하는 교육기관입니다.</p>
+  </section>
+
+  <!-- 교육 프로그램 섹션 -->
+  <section id="programs" class="container program-section">
+    <h2 class="text-center">교육 프로그램</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://example.com/program1.jpg" class="card-img-top" alt="프로그램 1">
+          <div class="card-body">
+            <h5 class="card-title">프로그램 1</h5>
+            <p class="card-text">설명 내용</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://example.com/program2.jpg" class="card-img-top" alt="프로그램 2">
+          <div class="card-body">
+            <h5 class="card-title">프로그램 2</h5>
+            <p class="card-text">설명 내용</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://example.com/program3.jpg" class="card-img-top" alt="프로그램 3">
+          <div class="card-body">
+            <h5 class="card-title">프로그램 3</h5>
+            <p class="card-text">설명 내용</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 공지사항 섹션 -->
+  <section id="notices" class="container program-section">
+    <h2 class="text-center">공지사항</h2>
+    <ul class="list-group">
+      <li class="list-group-item">공지사항 1</li>
+      <li class="list-group-item">공지사항 2</li>
+      <li class="list-group-item">공지사항 3</li>
+    </ul>
+  </section>
+
+  <!-- 연락처 섹션 -->
+  <section id="contact" class="contact-section bg-light">
+    <div class="container">
+      <h2 class="text-center">연락처</h2>
+      <p class="text-center">세종특별자치시교육청에 연락하려면 아래 정보를 확인하세요.</p>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <div class="form-group">
+              <label for="name">이름</label>
+              <input type="text" class="form-control" id="name" placeholder="이름을 입력하세요">
+            </div>
+            <div class="form-group">
+              <label for="email">이메일</label>
+              <input type="email" class="form-control" id="email" placeholder="이메일을 입력하세요">
+            </div>
+            <div class="form-group">
+              <label for="message">메시지</label>
+              <textarea class="form-control" id="message" rows="3" placeholder="메시지를 입력하세요"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">보내기</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 푸터 -->
+  <footer class="footer">
+    <p>&copy; 2024 세종특별자치시교육청. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS & jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
